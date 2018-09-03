@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Результаты игр - Санкт-Петербург</title>
+        <link href="css/jquery-ui.min.css" rel="stylesheet">
+        <link href="css/jquery-ui.theme.min.css" rel="stylesheet">
+        <link href="css/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+        <link href="css/materialdesignicons.min.css" rel="stylesheet">
+        <link href="css/slick.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="js/jQuery-3.3.1.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/jquery.ui.touch-punch.min.js"></script>
+        <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="js/slick.js"></script>
+    </head>
+    <body>
+    <header class="header container">
+        <div class="desctop-header mobile-hidden">
+            <div class="header-left">
+                <a href="/">
+                    <img src="img/logo/logo.svg" alt="" class="header-logo">
+                </a>
+            </div>
+            <div class="header-right">
+                <div class="right-top">
+                    <p class="season">Сезон 2017-2018</p>
+                    <ul class="header-nav">
+                        <li class="nav-item">
+                            <a href="/">
+                                <div class="number number-triangle">1</div>
+                                <p class="nav-item_name">
+                                    Женский<br> чемпионат
+                                </p>
+                                <ul class="inner-list">
+                                    <li class="inner-item">
+                                        <a href="state.html" class="inner-a">Положение</a>
+                                    </li>
+                                    <li class="inner-item">
+                                        <a href="teams.html" class="inner-a">Команды</a>
+                                    </li>
+                                    <li class="inner-item">
+                                        <a href="players.html" class="inner-a">Игроки</a>
+                                    </li>
+                                    <li class="inner-item">
+                                        <a href="stats.html" class="inner-a">Статистика</a>
+                                    </li>
+                                    <li class="inner-item">
+                                        <a href="game-results.html" class="inner-a">Результаты игр</a>
+                                    </li>
+                                    <li class="inner-item">
+                                        <a href="timetable.html" class="inner-a">Расписание игр</a>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/">
+                                <div class="number number-triangle">2</div>
+                                <p class="nav-item_name">
+                                    Мужской<br>чемпионат
+                                </p>
+                                <ul class="inner-list">
+                                    <li class="inner-item">
+                                        <a href="state.html" class="inner-a">Положение</a>
+                                    </li>
+                                    <li class="inner-item">
+                                        <a href="teams.html" class="inner-a">Команды</a>
+                                    </li>
+                                    <li class="inner-item">
+                                        <a href="players.html" class="inner-a">Игроки</a>
+                                    </li>
+                                    <li class="inner-item">
+                                        <a href="stats.html" class="inner-a">Статистика</a>
+                                    </li>
+                                    <li class="inner-item">
+                                        <a href="game-results.html" class="inner-a">Результаты игр</a>
+                                    </li>
+                                    <li class="inner-item">
+                                        <a href="timetable.html" class="inner-a">Расписание игр</a>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="bid.html">
+                                <div class="number">3</div>
+                                <p class="nav-item_name">
+                                    Заявка<br>на участие
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript: void(0)">
+                                <div class="number">4</div>
+                                <p class="nav-item_name">
+                                    Магазин
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contacts.html">
+                                <div class="number">5</div>
+                                <p class="nav-item_name">
+                                    Контакты
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-bottom">
+                    <div class="header-contacts">
+                        <a href="mailto: volleyleague@pvl.spb.ru">volleyleague@pvl.spb.ru</a>
+                        <a href="tel:+79117359822">+7&nbsp;911&nbsp;735&nbsp;98&nbsp;22</a>
+                    </div>
+                    <div class="bottom-nav">
+                        <p>Женский чемпионат</p>
+                        <p>Положение чемпионата</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-header desctop-hidden">
+            <ul class="mobile-header_list">
+                <li class="mobile-header_item">
+                    <a href="tel:89117359822" class="mobile-header_tel mdi mdi-phone"></a>
+                </li>
+                <li class="mobile-header_item">
+                    <a href="/" class="mobile-header_logo"><img src="img/logo/logo.svg" alt=""></a>
+                </li>
+                <li class="mobile-header_item">
+                    <div class="burger-menu">
+                        <span class="line1"></span>
+                        <span class="line2"></span>
+                        <span class="line3"></span>
+                    </div>
+                    <a href="mailto:volleyleague@pvl.spb.ru" class="mobile-header_mail mdi mdi-email"></a>
+                </li>
+            </ul>
+            <ul class="mobile-menu_list">
+                <li class="mobile-menu_item underline"><a><p>Женский чемпионат</p></a>
+                    <ul class="mobile-menu_innerList">
+                        <li class="inner-menu-item"><a href="state.html">Положение</a></li>
+                        <li class="inner-menu-item"><a href="teams.html">Команды</a></li>
+                        <li class="inner-menu-item"><a href="players.html">Игроки</a></li>
+                        <li class="inner-menu-item"><a href="stats.html">Статистика</a></li>
+                        <li class="inner-menu-item"><a href="game-results.html">Результаты игр</a></li>
+                        <li class="inner-menu-item"><a href="timetable.html">Расписание игр</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-menu_item underline"><a ><p>Мужской чемпионат</p></a>
+                    <ul class="mobile-menu_innerList">
+                        <li class="inner-menu-item"><a href="state.html">Положение</a></li>
+                        <li class="inner-menu-item"><a href="teams.html">Команды</a></li>
+                        <li class="inner-menu-item"><a href="players.html">Игроки</a></li>
+                        <li class="inner-menu-item"><a href="stats.html">Статистика</a></li>
+                        <li class="inner-menu-item"><a href="game-results.html">Результаты игр</a></li>
+                        <li class="inner-menu-item"><a href="timetable.html">Расписание игр</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-menu_item"><a href="bid.html">Заявка на участие</a></li>
+                <li class="mobile-menu_item"><a href="javascript: void(0)">Магазин</a></li>
+                <li class="mobile-menu_item"><a href="contacts.html">Контакты</a></li>
+                <li class="close-menu_button"></li>
+            </ul>
+        </div>
+    </header>
+        <main class="main-page">
+            <section class="state">
+                <h1 class="page-title container">Положение<br>чемпионата</h1>
+                <p class="page-description container">Положение о&nbsp;проведении чемпионата по&nbsp;волейболу среди женских любительских команд</p>
+                <div class=" container state-list-wrap">
+                    <ul class="state-list first-list">
+                        <li class="state-list_item">
+                            <p class="state-content" id="s1">Цели и задачи чемпионата</p>
+                            <ul class="state-list state-list_inner">
+                                <li class="state-list_item inner-item">1.1 Укрепление здоровья и&nbsp;организации досуга любителей волейбола.</li>
+                                <li class="state-list_item inner-item">1.2 Вовлечение в&nbsp;занятия волейболом населения&nbsp;г. Санкт-Петербурга.</li>
+                                <li class="state-list_item inner-item">1.3 Выявление сильнейших команд и&nbsp;игроков.</li>
+                                <li class="state-list_item inner-item">1.4 Укрепление дружественных связей между спортсменами.</li>
+                                <li class="state-list_item inner-item">1.5 Пропаганда здорового образа жизни среди населения&nbsp;г. Санкт-Петербурга.</li>
+                                <li class="state-list_item inner-item">1.6 Дальнейшее развитие взрослого любительского волейбола в&nbsp;г. Санкт-Петербурге.</li>
+                            </ul>
+                        </li>
+                        <li class="state-list_item">
+                            <p class="state-content" id="s2">2.1 Организация и проведение чемпионата</p>
+                            <ul class="state-list state-list_inner">
+                                <li class="state-list_item inner-item">2.2 Организацию и&nbsp;контроль за&nbsp;проведением Чемпионата осуществляет Оргкомитет Петербургской Волейбольной Лиги (далее&nbsp;&mdash; Оргкомитет ПВЛ).</li>
+                                <li class="state-list_item inner-item">2.3 Проведение Чемпионата осуществляет Оргкомитет ПВЛ.</li>
+                                <li class="state-list_item inner-item">2.4 Оргкомитет ПВЛ осуществляет:<br>- утверждение настоящего Положения;<br>- утверждение схемы распределения команд в дивизионах по окончании основного регистрационного периода;<br>- утверждение схемы распределения команд в дивизионах по окончании дополнительного регистрационного периода;<br>- подготовку и согласование Расписания игр Чемпионата;<br>- процедуру заявки команд для участия в Чемпионате;<br>- утверждение размеров взносов для участия в Чемпионате;<br>- финансирование судейства Чемпионата;<br>- организацию судейства Чемпионата;<br>- переносы игр (изменение даты, времени начала и места проведения) в случаях и порядке, предусмотренных настоящим Положением;<br>- регистрацию результатов Чемпионата;<br>- разработку перечня дисциплинарных санкций, применяемых к участникам Чемпионата;<br>- утверждение итогов Чемпионата;<br>- награждение победителей и призеров Чемпионата;<br>- награждение участников Чемпионата памятными призами;<br>- контроль за соблюдением настоящего Положения.</li>
+                                <li class="state-list_item inner-item">2.5 Оргкомитет ПВЛ имеет право изменять отдельные пункты Положения. Все изменения заблаговременно публикуются на сайте <a href="http://pvl.spb.ru">http://pvl.spb.ru.</a></li>
+                            </ul>
+                        </li>
+                        <li class="state-list_item">
+                            <p class="state-content" id="s3">Участники чемпионата</p>
+                            <ul class="state-list state-list_inner">
+                                <li class="state-list_item inner-item">3.1 Основной регистрационный период с&nbsp;15&nbsp;июля 2017г.&nbsp;по&nbsp;25&nbsp;августа 2017г.</li>
+                                <li class="state-list_item inner-item">3.2 Участниками Чемпионата могут быть все желающие команды, подавшие заявки на&nbsp;участие в&nbsp;Чемпионате.</li>
+                                <li class="state-list_item inner-item">3.3 Для участия в&nbsp;Чемпионате команде необходимо оформить заявку (п.12) и&nbsp;сдать вступительный взнос (п.11).</li>
+                                <li class="state-list_item inner-item">3.4 При подаче заявки команда, в&nbsp;лице заявителя, полностью соглашается с&nbsp;условиями Чемпионата.</li>
+                                <li class="state-list_item inner-item">3.5 В&nbsp;течение Чемпионата принимать участие в&nbsp;играх в&nbsp;составе команд могут только игроки, указанные в&nbsp;заявке.</li>
+                                <li class="state-list_item inner-item">3.6 Игроки, участвующие в&nbsp;Чемпионате, имеют право играть только за&nbsp;одну (свою) команду.</li>
+                                <li class="state-list_item inner-item">3.7 Дополнительный регистрационный период с&nbsp;26&nbsp;августа 2017г.&nbsp;по&nbsp;1&nbsp;апреля 2018г.</li>
+                                <li class="state-list_item inner-item">3.8 После окончания основного регистрационного периода участниками Чемпионата могут быть все желающие игроки.</li>
+                                <li class="state-list_item inner-item">3.9 Для участия в&nbsp;Чемпионате игроку необходимо оформить дозаявку (п.11) и&nbsp;сдать вступительный взнос (п.10).</li>
+                            </ul>
+                        </li>
+                        <li class="state-list_item">
+                            <p class="state-content" id="s4">Условия проведения игр чемпионата. Организация игр</p>
+                            <ul class="state-list state-list_inner">
+                                <li class="state-list_item inner-item">4.1 Правила проведения игр соответствуют действующим официальным правилам волейбола.</li>
+                                <li class="state-list_item inner-item">4.2 Чемпионат проводится в несколько этапов:<br>- первый круговой этап;<br>- второй круговой этап;<br>- плей-офф;<br>- финал четырёх.</li>
+                                <li class="state-list_item inner-item">4.3 Окончательная схема проведения Чемпионата определяется после окончания приёма заявок в&nbsp;зависимости от&nbsp;количества поданных заявок, после чего схема оформляется в&nbsp;виде Приложения &#8470;&nbsp;2&nbsp;настоящего Положения.</li>
+                                <li class="state-list_item inner-item">4.4 Чемпионат подразделяется на&nbsp;четыре дивизиона: Суперлига (максимальное количество команд&nbsp;&mdash; 10), Дивизион&nbsp;1 (максимальное количество команд&nbsp;&mdash; 20), Дивизион&nbsp;2 (максимальное количество команд&nbsp;&mdash; 40), Дивизион&nbsp;3 (максимальное количество команд&nbsp;&mdash; 40).</li>
+                                <li class="state-list_item inner-item">4.5 Суперлига формируется из&nbsp;команд, принимавших участие в&nbsp;Чемпионате Клуба Волейболистов Любителей 2016-2017 (далее Чемпионат КВЛ) в&nbsp;лигах не&nbsp;ниже Хард&nbsp;А.</li>
+                                <li class="state-list_item inner-item">4.6 Дивизион 1&nbsp;формируется из&nbsp;команд, принимавших участие в&nbsp;Чемпионате КВЛ 2016-2017&nbsp;в лигах не&nbsp;ниже Медиум.</li>
+                                <li class="state-list_item inner-item">4.7 Дивизион 2&nbsp;формируется из&nbsp;команд, принимавших участие в&nbsp;Чемпионате КВЛ 2016-2017&nbsp;в Лайт лиге.</li>
+                                <li class="state-list_item inner-item">4.8 Дивизион 3 формируется из всех желающих команд.</li>
+                                <li class="state-list_item inner-item">4.9 Команды, не&nbsp;имеющие истории выступлений за&nbsp;предыдущий сезон, могут заявиться в&nbsp;Дивизион&nbsp;3. В&nbsp;Дивизион 3&nbsp;рекомендуется заявляться командам, большинство игроков которых не&nbsp;имеют игрового опыта, полученного на&nbsp;соревнованиях городского уровня и&nbsp;выше.</li>
+                                <li class="state-list_item inner-item">4.10 В&nbsp;случае недобора команд в&nbsp;вышестоящие дивизионы, вакантные места могут быть заполнены командами, высказавшими на&nbsp;это свое согласие, из&nbsp;низших дивизионов.</li>
+                                <li class="state-list_item inner-item">4.11 В&nbsp;случае большого количества поданных заявок в&nbsp;Дивизион&nbsp;1, Дивизион 1&nbsp;может быть расширен.</li>
+                                <li class="state-list_item inner-item">4.12 Оргкомитет ПВЛ, при несовпадении уровня мастерства команды с&nbsp;выбранной лигой до&nbsp;начала Чемпионата, имеет право рекомендовать изменение заявки.</li>
+                                <li class="state-list_item inner-item">4.13 Место проведения игры определяет Оргкомитет ПВЛ.</li>
+                                <li class="state-list_item inner-item">4.14 Указанное время в&nbsp;Расписании игр&nbsp;&mdash; время начала разминки.</li>
+                                <li class="state-list_item inner-item">4.15 Игра начинается не&nbsp;позднее 30&nbsp;мин со&nbsp;времени, указанного как начало разминки.</li>
+                                <li class="state-list_item inner-item">4.16 На&nbsp;каждой игре заполняется протокол, который предоставляется Оргкомитетом ПВЛ.</li>
+                                <li class="state-list_item inner-item">4.17 Протокол игры является основным документом, удостоверяющим результат проведённой игры.</li>
+                                <li class="state-list_item inner-item">4.18 Исправления в&nbsp;составах команд и&nbsp;результате игры должны быть заверены подписями первого судьи и&nbsp;капитанов команд.</li>
+                                <li class="state-list_item inner-item">4.19 В&nbsp;течение игры в&nbsp;протоколе фиксируются очки, набранные командами по&nbsp;партиям, а&nbsp;также результат отыгранных партий.</li>
+                                <li class="state-list_item inner-item">4.20 Не&nbsp;допускается игра впятером. Команда, играющая вшестером, может продолжить игру впятером только в&nbsp;случае травмы одного из&nbsp;игроков при отсутствии запасного игрока. С&nbsp;этого момента статистический отчет игроков и&nbsp;команды в&nbsp;целом, оставшейся впятером, не&nbsp;ведётся.</li>
+                                <li class="state-list_item inner-item">4.21 Команда, играющая впятером, не&nbsp;может продолжить игру вчетвером. Результаты сыгранных партий сохраняются, счет в&nbsp;партии, во&nbsp;время которой выбыл пятый игрок, дописывается до&nbsp;25 (15) в&nbsp;пользу полной команды, а&nbsp;несыгранные партии записываются в&nbsp;пользу полной команды 25-0 (15-0).</li>
+                                <li class="state-list_item inner-item">4.22 Команда, пришедшая в&nbsp;составе менее 6&nbsp;человек, признается неполной, что равносильно неявке. Команде засчитывается техническое поражение 0:3 (0:25, 0:25, 0:25), &minus;3&nbsp;очка.</li>
+                                <li class="state-list_item inner-item">4.23 Если игрок одной из&nbsp;команд не&nbsp;успевает прибыть в&nbsp;зал к&nbsp;моменту построения команд, он&nbsp;может принять участие во&nbsp;встрече, начиная со&nbsp;следующей партии.</li>
+                                <li class="state-list_item inner-item">4.24 После окончания игры команды выбирают лучшего игрока у&nbsp;команды соперника.</li>
+                                <li class="state-list_item inner-item">4.25 После окончания игры капитаны команд обязаны оценить в&nbsp;соответствующей графе протокола качество судейства.</li>
+                                <li class="state-list_item inner-item">4.26 После окончания игры протокол в&nbsp;обязательном порядке должен быть подписан капитанами команд.</li>
+                                <li class="state-list_item inner-item">4.27 При необходимости Оргкомитет ПВЛ сверяет протокол игры в&nbsp;разделе &laquo;Команды&raquo; и&nbsp;заявки команд, опубликованные на&nbsp;сайте http://pvl.spb.ru. При обнаружении в&nbsp;составе одной из&nbsp;команд незаявленного игрока (отсутствуют данные в&nbsp;заявке, не&nbsp;оплачен вступительный взнос), результат игры аннулируется, такой команде засчитывается техническое поражение 0:3 (0:25, 0:25, 0:25), &minus;3&nbsp;очка. (Приложение &#8470;&nbsp;1, п.2).</li>
+                                <li class="state-list_item inner-item">4.28 В&nbsp;течение пяти рабочих дней с&nbsp;момента окончания игры Оргкомитет ПВЛ опубликовывает результат игры (общий результат, результат отыгранных партий, фамилии и&nbsp;имена лучших игроков, видеофиксацию игры) на&nbsp;сайте <a href="http://pvl.spb.ru">http://pvl.spb.ru.</a></li>
+                                <li class="state-list_item inner-item">4.29 В&nbsp;течение семи рабочих дней с&nbsp;момента окончания игры Оргкомитет ПВЛ опубликовывает статистический отчет игроков и&nbsp;команды на&nbsp;сайте <a href="http://pvl.spb.ru">http://pvl.spb.ru.</a></li>
+                            </ul>
+                        </li>
+                        <li class="state-list_item">
+                            <p class="state-content" id="s5">Расписание игр чемпионата</p>
+                            <ul class="state-list state-list_inner">
+                                <li class="state-list_item inner-item">5.1 Чемпионат проходит ежегодно с&nbsp;сентября по&nbsp;май.</li>
+                                <li class="state-list_item inner-item">5.2 Оргкомитет ПВЛ оставляет за&nbsp;собой право сдвигать сроки проведения Чемпионата не&nbsp;более чем на&nbsp;месяц в&nbsp;силу непредвиденных обстоятельств.</li>
+                                <li class="state-list_item inner-item">5.3 Расписание игр Чемпионата утверждается Оргкомитетом ПВЛ в&nbsp;соответствии с&nbsp;информацией, предоставленной командами (день недели и&nbsp;время начала разминки).</li>
+                                <li class="state-list_item inner-item">5.4 Расписание игр Чемпионата опубликовывается на&nbsp;сайте <a href="http://pvl.spb.ru">http://pvl.spb.ru.</a></li>
+                                <li class="state-list_item inner-item">5.5 Вследствие того, что Расписание игр Чемпионата составляется Оргкомитетом ПВЛ на&nbsp;основе информации, предоставленной командами, претензии по&nbsp;поводу расписания не&nbsp;принимаются.</li>
+                                <li class="state-list_item inner-item">5.6 Расписание игр этапов плей-офф и&nbsp;финала четырёх опубликовывается во&nbsp;втором круговом этапе на&nbsp;сайте <a href="http://pvl.spb.ru">http://pvl.spb.ru.</a></li>
+                            </ul>
+                        </li>
+                        <li class="state-list_item">
+                            <p class="state-content" id="s6">Порядок переноса игр и внесения изменений в расписание игр чемпионата</p>
+                            <ul class="state-list state-list_inner">
+                                <li class="state-list_item inner-item">6.1 Допускаются переносы игр на&nbsp;другой день и&nbsp;время в&nbsp;случаях:<br>&mdash;&nbsp;внесения изменений в&nbsp;Расписание игр Чемпионата по&nbsp;инициативе Оргкомитета ПВЛ (Обстоятельства, не&nbsp;позволяющие проводить игры в&nbsp;спортивных залах государственных бюджетных учреждений, такие как выборы различных уровней, карантин и&nbsp;т.п.);<br>&mdash;&nbsp;по&nbsp;просьбе одной из&nbsp;команд не&nbsp;позднее, чем за&nbsp;три дня до&nbsp;игры, но&nbsp;не&nbsp;более двух игр за&nbsp;один круг;<br>-при наложении двух расписаний игр разных чемпионатов (Чемпионат КВЛ, Чемпионат и&nbsp;первенство&nbsp;г. Санкт-Петербурга) при условии, что расписания других чемпионатов составлены раньше, чем Расписание игр Чемпионата.</li>
+                                <li class="state-list_item inner-item">6.2 Перенос запрашивается через Оргкомитет ПВЛ (удобный способ общения с&nbsp;Оргкомитетом ПВЛ выбирается при заполнении заявки на&nbsp;участие (п.12)).</li>
+                                <li class="state-list_item inner-item">6.3 Решение о&nbsp;переносе принимает команда соперника, у&nbsp;которой запрашивают перенос, а&nbsp;также при необходимости Оргкомитет ПВЛ.</li>
+                                <li class="state-list_item inner-item">6.4 Игра может быть перенесена по&nbsp;просьбе одной из&nbsp;команд не&nbsp;позднее, чем за&nbsp;три дня до&nbsp;игры, при условии, что команда соперника согласна на&nbsp;перенос. Если перенесенная игра, по&nbsp;каким-либо причинам до&nbsp;конца круга не&nbsp;состоялась или команда соперника не&nbsp;согласна на&nbsp;перенос, в&nbsp;соответствии с&nbsp;Приложением &#8470;&nbsp;1&nbsp;настоящего Положения команде-инициатору переноса засчитывается техническое поражение 0:3 (0:25, 0:25, 0:25), &minus;3&nbsp;очка. (Приложение &#8470;&nbsp;1, п.3).</li>
+                                <li class="state-list_item inner-item">6.5 Перенесенная игра обозначается соответствующим цветом в&nbsp;Расписании игр Чемпионата, в&nbsp;обязательном порядке подтверждается смс сообщением капитанам и&nbsp;их&nbsp;заместителям, а&nbsp;также сообщением на&nbsp;электронную почту. Капитанам и&nbsp;их&nbsp;заместителям необходимо подтвердить полученную информацию тем&nbsp;же способом.</li>
+                                <li class="state-list_item inner-item">6.6 Новая дата игры должна находиться в&nbsp;рамках первой игры того этапа Чемпионата, в&nbsp;котором был оформлен перенос и&nbsp;последней игры этого&nbsp;же этапа.</li>
+                                <li class="state-list_item inner-item">6.7 Игры этапов плей-офф и&nbsp;финала четырёх не&nbsp;могут быть перенесены.</li>
+                            </ul>
+                        </li>
+                        <li class="state-list_item" >
+                            <p class="state-content" id="s7">Неявки и дисквалификация команд</p>
+                            <ul class="state-list state-list_inner">
+                                <li class="state-list_item inner-item">7.1 Неявка засчитывается, если на&nbsp;построении перед игрой команда присутствует в&nbsp;количестве менее шести человек.</li>
+                                <li class="state-list_item inner-item">7.2 При неявке команды считается, что в&nbsp;игре приняли участие все игроки команды противника, внесённые в&nbsp;заявку команды противника. Статический отчет игроков и&nbsp;команды в&nbsp;целом. Лучшие игроки в&nbsp;составах команд не&nbsp;определяются.</li>
+                                <li class="state-list_item inner-item">7.3 При неявке на&nbsp;игру этапа плей-офф команда автоматически проигрывает этап плей-офф.</li>
+                                <li class="state-list_item inner-item">7.4 Дисквалификация команды&nbsp;&mdash; полное исключение команды из&nbsp;Чемпионата. Команда дисквалифицируется:<br>&mdash;&nbsp;при третьей неявке в&nbsp;течение всех этапов Чемпионата. Оргкомитетом ПВЛ может быть принять специальное решение не&nbsp;дисквалифицировать команду, учитывая уважительные причины участников команды.<br>&mdash;&nbsp;при добровольном снятии с&nbsp;Чемпионата во&nbsp;время одного из&nbsp;круговых этапов;<br>&mdash;&nbsp;при неявке на&nbsp;игру финала четырёх.</li>
+                                <li class="state-list_item inner-item">7.5 Если команда дисквалифицируется во&nbsp;время кругового этапа, результаты команды в&nbsp;круговом этапе аннулируются, команда исключается из&nbsp;турнирной таблицы, результаты остальных команд в&nbsp;дивизионе пересчитываются соответствующим образом.</li>
+                                <li class="state-list_item inner-item">7.6 Если команда дисквалифицируется на&nbsp;этапе финала четырёх, Оргкомитетом ПВЛ может быть принято специальное решение относительно возможности замещения выбывшей команды другой командой согласно текущему турнирному положению.</li>
+                                <li class="state-list_item inner-item">7.7 Дисквалифицированная команда теряет право наследования результата или дивизиона в&nbsp;Чемпионате следующего сезона. Если дисквалифицированная команда заявляется на&nbsp;следующий сезон, то&nbsp;даже при выполнении требований на&nbsp;постоянство состава (п.&nbsp;17.1.) она начинает выступление с&nbsp;низшего дивизиона.</li>
+                            </ul>
+                        </li>
+                        <li class="state-list_item">
+                            <p class="state-content" id="s8">Экипировка участников чемпионата</p>
+                            <ul class="state-list state-list_inner">
+                                <li class="state-list_item inner-item">8.1 Волейбольная форма не&nbsp;является обязательной. При отсутствии формы рекомендуется единый стиль у&nbsp;команды&nbsp;&mdash; например, майки или футболки одного цвета.</li>
+                                <li class="state-list_item inner-item">8.2 Футболки игроков должны быть пронумерованы от&nbsp;1&nbsp;до&nbsp;18.</li>
+                                <li class="state-list_item inner-item">8.3 Номер должен быть расположен на&nbsp;футболке по&nbsp;центру на&nbsp;груди и&nbsp;на&nbsp;спине. Цвет и&nbsp;яркость номеров должны контрастировать с&nbsp;цветом и&nbsp;яркостью футболок.</li>
+                                <li class="state-list_item inner-item">8.4 Номер должен быть высотой минимум 15&nbsp;см на&nbsp;груди и&nbsp;минимум 20&nbsp;см на&nbsp;спине. Полоски, образующие номера, должны быть шириной минимум 2&nbsp;см.</li>
+                                <li class="state-list_item inner-item">8.5 Форма игроков амплуа &laquo;либеро&raquo; должна отличаться от&nbsp;единого стиля команды.</li>
+                            </ul>
+                        </li>
+                        <li class="state-list_item">
+                            <p class="state-content" id="s9">Физическое состояние игроков и страховка</p>
+                            <ul class="state-list state-list_inner">
+                                <li class="state-list_item inner-item">9.1 За&nbsp;физическое состояние игроков ответственность несут представители команд и&nbsp;сами игроки команд. Страхование игроков со&nbsp;стороны Петербургской Волейбольной Лиги не&nbsp;предусмотрено.</li>
+                                <li class="state-list_item inner-item">9.2 В&nbsp;местах проведения игр Чемпионата есть все необходимые медикаменты для оказания первой медицинской помощи.</li>
+                                <li class="state-list_item inner-item">9.3 При получения легких травм рекомендовано обратиться к&nbsp;специалисту для консультации в&nbsp;медицинское учреждение.</li>
+                                <li class="state-list_item inner-item">9.4 При получении травм средней тяжести необходимо вызвать Скорую Медицинскую Помощь на&nbsp;место происшествия.</li>
+                            </ul>
+                        </li>
+                        <li class="state-list_item">
+                            <p class="state-content" id="s10">Места проведения игр чемпионата</p>
+                            <ul class="state-list state-list_inner">
+                                <li class="state-list_item inner-item">10.1 Игры Чемпионата могут проходить только в&nbsp;спортивных залах, утвержденных Оргкомитетом ПВЛ по&nbsp;следующим адресам:<br>&mdash;&nbsp;ул. Ушинского, д.&nbsp;13&nbsp;(спортивный зал ГБОУ СОШ &#8470;&nbsp;176);<br>&mdash;&nbsp;пр. Непокоренных, д. 12/2 (спортивный зал ГБОУ СОШ &#8470;&nbsp;514);<br>ул. Софьи Ковалевской, д.&nbsp;13, к.6 (спортивный зал ГБОУ СОШ &#8470;&nbsp;535);<br>&mdash;&nbsp;ул. Карпинского, д.&nbsp;38, к.8 (спортивный зал ГБОУ школы &#8470;&nbsp;561);<br>&mdash;&nbsp;другие адреса ГБОУ СОШ.</li>
+                                <li class="state-list_item inner-item">10.2 Оргкомитет ПВЛ оставляет право за&nbsp;собой менять место проведения игры не&nbsp;позднее, чем за&nbsp;сутки до&nbsp;начала игры, извещая об&nbsp;этом капитанов команд и&nbsp;их&nbsp;заместителей смс сообщением, а&nbsp;также удобным способом, который был указан командой при подаче заявки. Во&nbsp;избежание недоразумений капитанам команд необходимо прислать уведомление о&nbsp;получении информации о&nbsp;смене адреса зала тем&nbsp;же способом.</li>
+                                <li class="state-list_item inner-item">10.3 Оргкомитет ПВЛ оставляет право за&nbsp;собой менять место проведения игры менее чем за&nbsp;сутки до&nbsp;начала игры, в&nbsp;случае возникновения форс-мажорных ситуаций (невозможность проведения игры в&nbsp;определенном зале из-за поломки оборудования и&nbsp;т.п., судья по&nbsp;уважительной причине не&nbsp;сможет явится на&nbsp;игру) извещая об&nbsp;этом капитанов команд и&nbsp;их&nbsp;заместителей смс сообщением, а&nbsp;также удобным способом, который был указан командой при подаче заявки. Во&nbsp;избежание недоразумений капитанам команд необходимо прислать уведомление о&nbsp;получении информации о&nbsp;смене адреса зала тем&nbsp;же способом.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="state-list second-list">
+                        <li class="state-list_item">
+                            <p class="state-content" id="s11">Финансовые условия</p>
+                            <ul class="state-list state-list_inner">
+                                <li class="state-list_item inner-item">11.1 Основной регистрационный период с&nbsp;15&nbsp;июля 2017г.&nbsp;по&nbsp;25&nbsp;августа 2017г.</li>
+                                <li class="state-list_item inner-item">11.2 Каждая команда, подавшая согласие участвовать в&nbsp;Чемпионате, оплачивает взнос в&nbsp;размере 2000&nbsp;руб.&nbsp;в&nbsp;срок с&nbsp;15&nbsp;июля 2017г.&nbsp;по&nbsp;25&nbsp;августа 2017г. (квитанция на&nbsp;команду).</li>
+                                <li class="state-list_item inner-item">11.3 Дополнительный регистрационный период с&nbsp;26&nbsp;августа 2017г.&nbsp;по&nbsp;01&nbsp;апреля 2018г.</li>
+                                <li class="state-list_item inner-item">11.4 Игрок имеет право перейти в&nbsp;другую команду в&nbsp;дополнительный регистрационный период.</li>
+                                <li class="state-list_item inner-item">11.5 При переходе в&nbsp;первом круговом этапе игрок оплачивает взнос в&nbsp;размере 1000&nbsp;руб. отдельно до&nbsp;своей первой игры за&nbsp;новую команду согласно Расписанию игр Чемпионата (квитанция на&nbsp;игрока).</li>
+                                <li class="state-list_item inner-item">11.6 При переходе во&nbsp;втором круговом этапе игрок оплачивает взнос в&nbsp;размере 2000&nbsp;руб. отдельно до&nbsp;своей первой игры за&nbsp;новую команду согласно Расписанию игр Чемпионата (квитанция на&nbsp;игрока).</li>
+                                <li class="state-list_item inner-item">11.7 Новый игрок имеет право вступить в&nbsp;команду и&nbsp;принять участие в&nbsp;Чемпионате после окончания основного регистрационного периода.</li>
+                                <li class="state-list_item inner-item">11.8 Новый игрок в&nbsp;первом круговом этапе оплачивает взнос в&nbsp;размере 1000&nbsp;руб. отдельно до&nbsp;своей первой игры за&nbsp;новую команду согласно Расписанию игр Чемпионата (квитанция на&nbsp;игрока).</li>
+                                <li class="state-list_item inner-item">11.9 Новый игрок во&nbsp;втором круговом этапе оплачивает взнос в&nbsp;размере 2000&nbsp;руб. отдельно до&nbsp;своей первой игры за&nbsp;новую команду согласно Расписанию игр Чемпионата (квитанция на&nbsp;игрока).</li>
+                                <li class="state-list_item inner-item">11.10 Команды самостоятельно оплачивают аренду зала. Взнос за&nbsp;игру с&nbsp;каждого человека, вписанного в&nbsp;протокол, составляет 250&nbsp;руб., но&nbsp;не&nbsp;более 2000&nbsp;руб.&nbsp;с&nbsp;команды. Оплата происходит непосредственно до&nbsp;игры. Травмированным, удаленным или дисквалифицированным игрокам взнос за&nbsp;игру не&nbsp;возвращается.</li>
+                                <li class="state-list_item inner-item">11.11 Для каждой команды, выступающей от&nbsp;имени какой-либо организации, а&nbsp;организация в&nbsp;свою очередь имеет возможность оплатить команде взнос и&nbsp;участие в&nbsp;Чемпионате, может быть составлен договор. Команде следует заранее сообщить Оргкомитету ПВЛ о&nbsp;возможности участия в&nbsp;Чемпионате за&nbsp;счет организации.</li>
+                                <li class="state-list_item inner-item">11.12 Данные суммы действительны только на&nbsp;сезон 2017&ndash;2018. В&nbsp;дальнейшем Оргкомитет ПВЛ оставляет за&nbsp;собой право изменять размеры взносов.</li>
+                                <li class="state-list_item inner-item">11.13 Полученные средства расходуются на&nbsp;аренду спортивных залов для игр, судейство, работу статиста, программиста, ведение сайта, изготовление наград и&nbsp;прочие нужды, связанные с&nbsp;организацией и&nbsp;проведением Чемпионата.</li>
+                                <li class="state-list_item inner-item">11.14 Командам, выбывшим по&nbsp;каким-либо причинам из&nbsp;Чемпионата, внесенные средства не&nbsp;возвращаются.</li>
+                                <li class="state-list_item inner-item">11.15 Оргкомитет ПВЛ не&nbsp;отчитывается перед командами по&nbsp;использованию полученных средств.</li>
+                            </ul>
+                        </li>
+                        <li class="state-list_item">
+                            <p class="state-content" id="s12">Заявка для участия в чемпионате и порядок её офомления</p>
+                            <ul class="state-list state-list_inner">
+                                <li class="state-list_item inner-item">12.1 Для участия в&nbsp;Чемпионате команда обязана подать заявку по&nbsp;установленной форме и&nbsp;оплатить вступительный взнос в&nbsp;размере и&nbsp;сроки, предусмотренные настоящим Положением.</li>
+                                <li class="state-list_item inner-item">12.2 Заявки для участия в&nbsp;Чемпионате принимаются в&nbsp;основной регистрационной период.<br>&mdash;&nbsp;Основной регистрационный период с&nbsp;15&nbsp;июля 2017г.&nbsp;по&nbsp;25&nbsp;августа 2017г.</li>
+                                <li class="state-list_item inner-item">12.3 Дозаявки новых игроков в&nbsp;команды принимаются в&nbsp;дополнительный регистрационный период.<br>&mdash;&nbsp;Дополнительный регистрационный период с&nbsp;26&nbsp;августа 2017г.&nbsp;по&nbsp;1&nbsp;апреля 2018г.</li>
+                                <li class="state-list_item inner-item">12.4 Запрещены дозаявки в&nbsp;этапы плей-офф и&nbsp;финал четырех.</li>
+                                <li class="state-list_item inner-item">12.5 Подача заявки и&nbsp;дозаявки в&nbsp;основной регистрационный период разрешается капитану команды и/или его заместителю.</li>
+                                <li class="state-list_item inner-item">12.6 Подача дозаявки после окончания основного регистрационного периода разрешается капитану команды и/или его заместителю только после оплаты вступительного взноса за&nbsp;нового игрока.</li>
+                                <li class="state-list_item inner-item">12.7 Заявка, заполненная не&nbsp;в&nbsp;соответствии с&nbsp;предлагаемой формой, является недействительной. На&nbsp;указанные номер телефона и&nbsp;электронную почту придёт уведомление о&nbsp;необходимости откорректировать данные и&nbsp;заполнить форму повторно.</li>
+                            </ul>
+                        </li>
+                        <li class="state-list_item">
+                            <p class="state-content" id="s13">Судейство</p>
+                            <ul class="state-list state-list_inner">
+                                <li class="state-list_item inner-item">13.1 Допускаются некоторые отступления от&nbsp;официальных правил волейбола в&nbsp;связи с&nbsp;любительским статусом Чемпионата.</li>
+                                <li class="state-list_item inner-item">13.2 Необязательными для Чемпионата являются следующие положения Официальных правил волейбола ФИВБ:<br>&mdash;&nbsp;1.1 (размеры свободной зоны, высота потолка), 1.4.2-1.4.5 (зоны подачи&nbsp;/ разминки&nbsp;/ замены&nbsp;/ наказанных);<br>&mdash;&nbsp;2.2 (строгие параметры сетки), 2.3 (боковые ленты), 2.5.1-2.5.2 (описание стоек);<br>&mdash;&nbsp;4.2.1, 4.2.2. (скамейки команд);<br>5.1.2.2. (требование проверить расстановку)&nbsp;&mdash; расстановка не&nbsp;фиксируется в&nbsp;протоколе игр Чемпионата;<br>&mdash;&nbsp;5.3.2.1 (заполнение тренером карточки расстановки);<br>&mdash;&nbsp;7.3 (пункты, касающиеся карточки расстановки)&nbsp;&mdash; в&nbsp;играх Чемпионата карточка расстановки не&nbsp;заполняется, расстановка не&nbsp;отслеживается в&nbsp;протоколе, наличие второго судьи и&nbsp;секретаря не&nbsp;является обязательным. Судьям необходимо отслеживать расстановку и&nbsp;замены команд своими силами;<br>&mdash;&nbsp;18.1 (перерывы между партиями)&nbsp;&mdash; продолжительность перерывов определяется судьёй в&nbsp;зависимости от&nbsp;конкретной ситуации в&nbsp;игре, исходя из&nbsp;доступного времени спортивного зала;<br>&mdash;&nbsp;22.1 (состав судейской бригады)&nbsp;&mdash; игры Чемпионата могут обслуживаться одним (первым) судьёй. В&nbsp;этом случае он&nbsp;должен одновременно выполнять обязанности, возложенные официальными правилами волейбола на&nbsp;первого и&nbsp;второго судей;<br>&mdash;&nbsp;24, 25, 26, 27&nbsp;(второй судья, секретарь и&nbsp;помощник секретаря, линейные судьи)&nbsp;&mdash; применяется при наличии указанных лиц в&nbsp;составе судейской бригады;&mdash;&nbsp;также допускаются следующие отклонения от&nbsp;пунктов 2.1.1, 2.1.2 (высота сетки): высота сетки должна быть в&nbsp;пределах 221-227&nbsp;см в&nbsp;центре сетки и&nbsp;221-229&nbsp;см на&nbsp;краях.</li>
+                                <li class="state-list_item inner-item">13.3 Назначение судей на&nbsp;игры осуществляется Оргкомитетом ПВЛ.</li>
+                                <li class="state-list_item inner-item">13.4 На&nbsp;основании оценок капитанов, ведется рейтинг судей.</li>
+                            </ul>
+                        </li>
+                        <li class="state-list_item">
+                            <p class="state-content" id="s14">Подсчёт очков и определение победителей</p>
+                            <ul class="state-list state-list_inner">
+                                <li class="state-list_item inner-item">14.1 Суперлига:<br>&mdash;&nbsp;за&nbsp;победу со&nbsp;счетом 3:0 или 3:1 команда получает &laquo;3&raquo; очка;<br>&mdash;&nbsp;за&nbsp;поражение со&nbsp;счетом 0:3 или 1:3 команда получает &laquo;0&raquo; очков;<br>&mdash;&nbsp;за&nbsp;победу со&nbsp;счетом 3:2 команда получает &laquo;2&raquo; очка;<br>&mdash;&nbsp;за&nbsp;поражение со&nbsp;счетом 2:3 команда получает &laquo;1&raquo; очко;<br>&mdash;&nbsp;за&nbsp;неявку&nbsp;&mdash; 0:3 (0:25, 0:25, 0:25). Команда получает &laquo;-3&raquo; очка.</li>
+                                <li class="state-list_item inner-item">14.2 Дивизион 1:<br>&mdash;&nbsp;за&nbsp;победу со&nbsp;счетом 3:0 или 3:1 команда получает &laquo;3&raquo; очка;<br>&mdash;&nbsp;за&nbsp;поражение со&nbsp;счетом 0:3 или 1:3 команда получает &laquo;0&raquo; очков;<br>&mdash;&nbsp;за&nbsp;победу со&nbsp;счетом 3:2 команда получает &laquo;2&raquo; очка;<br>&mdash;&nbsp;за&nbsp;поражение со&nbsp;счетом 2:3 команда получает &laquo;1&raquo; очко;<br>&mdash;&nbsp;за&nbsp;неявку&nbsp;&mdash; 0:3 (0:25, 0:25, 0:25). Команда получает &laquo;-3&raquo; очка.</li>
+                                <li class="state-list_item inner-item">14.3 Дивизион 2:<br>&mdash;&nbsp;за&nbsp;победу со&nbsp;счетом 3:0 или 3:1 команда получает &laquo;3&raquo; очка;<br>&mdash;&nbsp;за&nbsp;поражение со&nbsp;счетом 0:3 или 1:3 команда получает &laquo;0&raquo; очков;<br>&mdash;&nbsp;за&nbsp;победу со&nbsp;счетом 3:2 команда получает &laquo;2&raquo; очка;<br>&mdash;&nbsp;за&nbsp;поражение со&nbsp;счетом 2:3 команда получает &laquo;1&raquo; очко;<br>&mdash;&nbsp;за&nbsp;неявку&nbsp;&mdash; 0:3 (0:25, 0:25, 0:25). Команда получает &laquo;-3&raquo; очка.</li>
+                                <li class="state-list_item inner-item">14.4 Дивизион&nbsp;3 (4, 5, и&nbsp;т.&nbsp;д.):<br>&mdash;&nbsp;за&nbsp;победу со&nbsp;счетом 3:0 команда получает &laquo;3&raquo; очка;<br>&mdash;&nbsp;за&nbsp;победу со&nbsp;счетом 3:0 команда получает &laquo;3&raquo; очка;<br>&mdash;&nbsp;за&nbsp;победу со&nbsp;счетом 2:1 команда получает &laquo;2&raquo; очка;<br>&mdash;&nbsp;за&nbsp;поражение со&nbsp;счетом 0:3 команда получает &laquo;0&raquo; очков;<br>&mdash;&nbsp;за&nbsp;поражение со&nbsp;счетом 1:2 команда получает &laquo;1&raquo; очко;<br>&mdash;&nbsp;за&nbsp;неявку&nbsp;&mdash; 0:3 (0:25, 0:25, 0:25). Команда получает &laquo;-3&raquo; очка;<br>&mdash;&nbsp;при счете 1:1, третья партия играется до&nbsp;25&nbsp;очков.</li>
+                                <li class="state-list_item inner-item">14.5 Победитель определяется:<br>&mdash;&nbsp;по&nbsp;количеству набранных командами очков;<br>&mdash;&nbsp;по&nbsp;количеству побед;<br>&mdash;&nbsp;по&nbsp;лучшему соотношению выигранных и&nbsp;проигранных партий;<br>&mdash;&nbsp;по&nbsp;результатам личных встреч;<br>&mdash;&nbsp;по&nbsp;соотношению выигранных и&nbsp;проигранных мячей.</li>
+                            </ul>
+                        </li>
+                        <li class="state-list_item">
+                            <p class="state-content" id="s15">Награждение и закрытие чемпионата</p>
+                            <ul class="state-list state-list_inner">
+                                <li class="state-list_item inner-item">15.1 Официальное награждение победителей и&nbsp;призеров Чемпионата осуществляется Оргкомитетом ПВЛ в&nbsp;сроки и&nbsp;местах, предварительно согласованных с&nbsp;командами.</li>
+                                <li class="state-list_item inner-item">15.2 Призовой фонд формируется на&nbsp;основе вступительных вносов команд и&nbsp;собственных средств Оргкомитет ПВЛ.</li>
+                                <li class="state-list_item inner-item">15.3 Памятными призами награждаются все команды, дошедшие до&nbsp;закрытия Чемпионата.</li>
+                                <li class="state-list_item inner-item">15.4 Награждение Суперлиги.</li>
+                                <li class="staet-list_item inner-item">15.5 Команда, занявшая 1&nbsp;место в&nbsp;Суперлиге, получает призовой фонд 25&nbsp;000 рублей и&nbsp;право выступать бесплатно с&nbsp;следующем сезоне Чемпионата Петербургская Волейбольная Лига (вступительный взнос является обязательным условием участия, а&nbsp;оплата не&nbsp;взимается за&nbsp;игры всех этапов сезона 2018/2019), а&nbsp;также получает кубки, медали, дипломы.</li>
+                                <li class="state-list_item inner-item">15.6 Команды, занявшие 2,3 места в&nbsp;Суперлиге, получают призовой фонд 15&nbsp;000, 10&nbsp;000 рублей соответственно, а&nbsp;также получают кубки, медали, дипломы. Каждая команда получает диплом с&nbsp;указанием своего дивизиона и&nbsp;места, которое в&nbsp;нем занимает.</li>
+                                <li class="state-list_item inner-item">15.7 Команды, занявшие 1,2,3 места в&nbsp;Дивизионах 1-3, получают кубки, медали, дипломы. Каждая команда получает диплом с&nbsp;указанием своего дивизиона и&nbsp;места, которое в&nbsp;нем занимает.</li>
+                                <li class="state-list_item inner-item">15.8 Призами и&nbsp;дипломами награждаются лучшие игроки в&nbsp;индивидуальных номинациях (по&nbsp;данным статистических отчетов).</li>
+                                <li class="state-list_item inner-item">15.9 В&nbsp;отдельной номинации будет отмечен лучший судья Чемпионата.</li>
+                                <li class="state-list_item inner-item">15.10 Команды, выбывшие из&nbsp;Чемпионата, наград не&nbsp;получают.</li>
+                            </ul>
+                        </li>
+                        <li class="state-list_item">
+                            <p class="state-content" id="s16">Спорные ситуации</p>
+                            <ul class="state-list state-list_inner">
+                                <li class="state-list_item inner-item">16.1 При рассмотрении спорной ситуации Оргкомитет опрашивает контактных лиц, судей, зрителей. При вынесении решения Оргкомитет руководствуется:<br>&mdash;&nbsp;настоящим Положением;<br>&mdash;&nbsp;имеющейся практикой рассмотрения спорных ситуаций;<br>&mdash;&nbsp;прочими соображениями.</li>
+                                <li class="state-list_item inner-item">16.2 В&nbsp;случае возникновения конфликтных ситуаций, Оргкомитет имеет право вынести любое решение по&nbsp;своему усмотрению (в&nbsp;том числе решение о&nbsp;переигровке) и&nbsp;применить любые штрафные санкции по&nbsp;отношению к&nbsp;командам, игрокам, вплоть до&nbsp;снятия с&nbsp;Чемпионата.</li>
+                            </ul>
+                        </li>
+                        <li class="state-list_item">
+                            <p class="state-content" id="s17">Правила наследования результата</p>
+                            <ul class="state-list state-list_inner">
+                                <li class="state-list_item inner-item">17.1 Для наследования результата сезона 2017-2018, дающего право выступать в&nbsp;Суперлиге и&nbsp;Дивизионе 1&nbsp;в сезоне 2018-2019, командам необходимо при подаче заявки сохранить в&nbsp;своём составе не&nbsp;менее пяти игроков из&nbsp;заявки на&nbsp;второй круговой этап сезона 2017-2018.</li>
+                                <li class="state-list_item inner-item">17.2 Если команда при подаче заявки сохраняет в&nbsp;своём составе менее пяти игроков, она считается новой, не&nbsp;может унаследовать результат выступления в&nbsp;сезоне 2017-2018 и&nbsp;принимает участие в&nbsp;Чемпионате в&nbsp;сезоне 2018-2019&nbsp;на общих основаниях (может подать заявку в&nbsp;открытые Дивизионы).</li>
+                                <li class="state-list_item inner-item">17.3 Правопреемниками в&nbsp;случае распада команды являются лица, указанные в&nbsp;заявке команды. В&nbsp;случае отсутствия явного указания на&nbsp;правопреемника, таковым признается капитан, а&nbsp;следом за&nbsp;ним заместитель капитана. Если вышеперечисленные лица уходят из&nbsp;команды и&nbsp;не&nbsp;делегируют кому-либо свои права, то&nbsp;Оргкомитет ПВЛ имеет право делегировать их&nbsp;права другой/новой команде соответствующего уровня.</li>
+                            </ul>
+                        </li>
+                        <li class="state-list_item">
+                            <p class="state-content" id="s18">Поведение участников</p>
+                            <ul class="state-list state-list_inner">
+                                <li class="state-list_item inner-item">18.1 Спортивное поведение.</li>
+                                <li class="state-list_item inner-item">18.2 Участники Чемпионата должны знать официальные правила волейбола и&nbsp;соблюдать&nbsp;их.</li>
+                                <li class="state-list_item inner-item">18.3 Участники Чемпионата должны по-спортивному принимать решения судей без их&nbsp;обсуждения.</li>
+                                <li class="state-list_item inner-item">18.4 В&nbsp;случае сомнения, разъяснение может быть запрошено только через игрового капитана.</li>
+                                <li class="state-list_item inner-item">18.5 Участники Чемпионата должны воздерживаться от&nbsp;действий или позиций, имеющих цель повлиять на&nbsp;решение судей или скрыть ошибки, совершенные их&nbsp;командой.</li>
+                                <li class="state-list_item inner-item">18.6 Честная игра.</li>
+                                <li class="state-list_item inner-item">18.7 Участники Чемпионата должны вести себя уважительно и&nbsp;вежливо, в&nbsp;духе ЧЕСТНОЙ ИГРЫ не&nbsp;только по&nbsp;отношению к&nbsp;судьям, но&nbsp;также по&nbsp;отношению к&nbsp;другим официальным лицам, соперникам, партнёрам и&nbsp;зрителям.</li>
+                                <li class="state-list_item inner-item">18.8 Общение между членами команды во&nbsp;время игры разрешено.</li>
+                            </ul>
+                        </li>
+                        <li class="state-list_item">
+                            <p class="state-content" id="s19">Дисциплинарные проступки и санкции</p>
+                            <ul class="state-list state-list_inner">
+                                <li class="state-list_item inner-item">19.1 Команды несут ответственность за&nbsp;поведение своих волейболистов, официальных лиц, членов команды и&nbsp;зрителей, а&nbsp;также любого другого лица, выполняющего функцию, на&nbsp;какой-либо игре от&nbsp;имени команды. Они могут быть привлечены к&nbsp;ответственности за&nbsp;любого рода происшествия, недисциплинированное поведение, нарушение настоящего Положения. К&nbsp;ним могут быть применены дисциплинарные санкции и&nbsp;иные меры воздействия.</li>
+                                <li class="state-list_item inner-item">19.2 Рассмотрение вопросов дисциплинарного характера возлагается на&nbsp;Оргкомитет ПВЛ</li>
+                                <li class="state-list_item inner-item">19.3 Контроль за&nbsp;исполнением назначенных санкций возлагается на&nbsp;Оргкомитет ПВЛ</li>
+                                <li class="state-list_item inner-item">19.4 Дисциплинарные санкции за&nbsp;проступки и&nbsp;нарушения настоящего Положения (Приложение &#8470;&nbsp;1).</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <ul class="container state-list_black">
+                    <li class="state-black_item">
+                        <p class="state-content">Приложение &#8470;&nbsp;1&nbsp;к положению о&nbsp;проведении чемпионата по&nbsp;волейболу среди женских любительских команд</p>
+                    </li>
+                    <li class="state-black_item">
+                        <p class="state-content">Приложение &#8470;&nbsp;2&nbsp;к положению о&nbsp;проведении чемпионата по&nbsp;волейболу среди женских любительских команд</p>
+                    </li>
+                </ul>
+            </section>
+            <div class="mobile-footer desctop-hidden">
+                <ul class="footer-list">
+                    <li class="footer-list_item">
+                        <a href="/">Женский чемпионат</a>
+                    </li>
+                    <li class="footer-list_item">
+                        <a href="/">Мужской чемпионат</a>
+                    </li>
+                    <li class="footer-list_item">
+                        <a href="bid.html">Заявка на участие</a>
+                        <a href="javascript: void(0)" class="mdi mdi-vk"></a>
+                    </li>
+                    <li class="footer-list_item">
+                        <a href="contacts.html">Контакты</a>
+                        <a href="javascript: void(0)" class="mdi mdi-instagram"></a>
+                    </li>
+                    <li class="footer-list_item">
+                        <a href="javascript: void(0)">Магазин</a>
+                        <a href="javascript: void(0)" class="mdi mdi-facebook"></a>
+                    </li>
+                </ul>
+                <a href="tel:89117359822" class="footer-item ">+7&nbsp;911&nbsp;735&nbsp;98&nbsp;22</a>
+                <a href="mailto:volleyleague@pvl.spb.ru" class="footer-item ">volleyleague@pvl.spb.ru</a>
+                <a href="#" class="footer-item_small center">Политика кофиденциальности</a>
+                <p class="footer-item_small1 center">
+                    <script>
+                        document.write("&copy; "+ new Date().getFullYear());
+                    </script> ПЕТЕРБРУГСКАЯ ВОЛЕЙБОЛЬНАЯ ЛИГА
+                </p>
+                <div class="developer-cont">
+                    <a href="http://kdm1.ru" target="_blank">
+                        <img src="img/developer/kdm.svg" alt="" class="kdm-img">
+                        <div class="developer-right">
+                            <p class="developer-desc">Сайт разработан в агентстве</p>
+                            <p class="developer-desc">&laquo;Клиника доброго маркетолога&raquo;</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="desctop-footer container mobile-hidden">
+                <div class="footer-top">
+                    <ul class="footer-nav">
+                        <li class="footer-nav_item">
+                            <a href="/">Женский чемпионат</a>
+                        </li>
+                        <li class="footer-nav_item">
+                            <a href="index-men.html">Мужской чемпионат</a>
+                        </li>
+                        <li class="footer-nav_item">
+                            <a href="bid.html">Заявка на участие</a>
+                        </li>
+                        <li class="footer-nav_item">
+                            <a href="javascript: void(0)">Магазин</a>
+                        </li>
+                        <li class="footer-nav_item">
+                            <a href="contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-1">
+                        <a href="tel:+79117359822">+7&nbsp;911&nbsp;735&nbsp;98&nbsp;22</a>
+                        <a href="mailto: volleyleague@pvl.spb.ru">volleyleague@pvl.spn.ru</a>
+                    </div>
+                    <div class="footer-2">
+                        <div class="footer-21">
+                            <ul class="social-list">
+                                <li class="social-item">
+                                    <a href="javascript: void(0)" target="_blank" class="mdi mdi-vk"></a>
+                                </li>
+                                <li class="social-item">
+                                    <a href="javascript: void(0)" target="_blank" class="mdi mdi-instagram"></a>
+                                </li>
+                                <li class="social-item">
+                                    <a href="javascript: void(0)" target="_blank" class="mdi mdi-facebook"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-22">
+                            <p class="copyright"><script>
+                                document.write("&copy; "+ new Date().getFullYear());
+                            </script> ПЕТЕРБРУГСКАЯ ВОЛЕЙБОЛЬНАЯ ЛИГА</p>
+                        </div>
+                        <div class="footer-23">
+                            <a class="politic">Политика конфиденциальности</a>
+                        </div>
+                    </div>
+                    <div class="footer-3">
+                        <a href="http://kdm1.ru" target="_blank">
+                            <img src="img/developer/kdm.svg" alt="">
+                            <div class="dev-cont">
+                                <p>Сайт разработан в агентстве</p>
+                                <p>&laquo;Клиника доброго маркетолога&raquo;</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="overlay-blue"></div>
+    <script src="js/script.js"></script>
+    </body>
+</html>

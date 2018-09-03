@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script src='js/jQuery-3.3.1.js'></script>
+    <script src="https://cdn.rawgit.com/briangonzalez/rgbaster.js/b2fb235b/rgbaster.min.js"></script>
+</head>
+<body>
+<div style="width: 200px; height: 200px"></div>
+<div>
+    <img id="img" src='img/teams/11.svg' alt="">
+    <div class="1" style="width: 100px; height: 100px; background: red;"></div>
+</div>
+<script>
+
+    var img = document.getElementById('img');
+
+    var color;
+
+
+$(function() {
+    RGBaster.colors(img, {
+        succes: function(payload) {
+            var a = $('.1');
+            a.css('backgroudn', payload.dominant);
+        }
+    });
+    })
+
+
+
+</script>
+</body>
+</html>

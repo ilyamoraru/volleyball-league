@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Результаты игр - Санкт-Петербург</title>
+        <link href="css/jquery-ui.min.css" rel="stylesheet">
+        <link href="css/jquery-ui.theme.min.css" rel="stylesheet">
+        <link href="css/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+        <link href="css/materialdesignicons.min.css" rel="stylesheet">
+        <link href="css/slick.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="js/jQuery-3.3.1.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/jquery.ui.touch-punch.min.js"></script>
+        <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="js/slick.js"></script>
+    </head>
+    <body>
+    <header class="mobile-header">
+        <ul class="mobile-header_list">
+            <li class="mobile-header_item">
+                <a href="tel:89117359822" class="mobile-header_tel mdi mdi-phone"></a>
+            </li>
+            <li class="mobile-header_item">
+                <a href="/" class="mobile-header_logo"><img src="img/logo/logo.svg" alt=""></a>
+            </li>
+            <li class="mobile-header_item">
+                <div class="burger-menu">
+                    <span class="line1"></span>
+                    <span class="line2"></span>
+                    <span class="line3"></span>
+                </div>
+                <a href="mailto:volleyleague@pvl.spb.ru" class="mobile-header_mail mdi mdi-email"></a>
+            </li>
+        </ul>
+        <ul class="mobile-menu_list">
+            <li class="mobile-menu_item underline"><a ><p>Женский чемпионат</p></a>
+                <ul class="mobile-menu_innerList">
+                    <li class="inner-menu-item"><a href="state.html">Положение</a></li>
+                    <li class="inner-menu-item"><a href="teams.html">Команды</a></li>
+                    <li class="inner-menu-item"><a href="players.html">Игроки</a></li>
+                    <li class="inner-menu-item"><a href="game-results.html">Результаты игр</a></li>
+                    <li class="inner-menu-item"><a href="timetable.html">Расписание игр</a></li>
+                </ul>
+            </li>
+            <li class="mobile-menu_item underline"><a ><p>Мужской чемпионат</p></a>
+                <ul class="mobile-menu_innerList">
+                    <li class="inner-menu-item"><a href="state">Положение</a></li>
+                    <li class="inner-menu-item"><a href="teams.html">Команды</a></li>
+                    <li class="inner-menu-item"><a href="players.html">Игроки</a></li>
+                    <li class="inner-menu-item"><a href="game-results.html">Результаты игр</a></li>
+                    <li class="inner-menu-item"><a href="timetable.html">Расписание игр</a></li>
+                </ul>
+            </li>
+            <li class="mobile-menu_item"><a href="bid.html">Заявка на участие</a></li>
+            <li class="mobile-menu_item"><a href="javascript: void(0)">Магазин</a></li>
+            <li class="mobile-menu_item"><a href="contacts.html">Контакты</a></li>
+            <li class="close-menu_button"></li>
+        </ul>
+    </header>
+        <main class="main-page">
+            <section class="player-page">
+                <div class="player-block1">
+                    <a href="index.html" class="button close-button"></a>
+                    <div class="block1-left">
+                        <p class="small">Женщины/1-ый Дивизион</p>
+                        <p class="page-subtitle">Лидеры чемпионата</p>
+                    </div>
+                </div>
+                <div class="player-block2">
+                    <img src="img/players/1.jpg" alt="">
+                    <div class="player-name-cont">
+                        <div class="player-number">1</div>
+                        <p class="player-name">Наталья Пурвин</p>
+                    </div>
+                </div>
+                <div class="player-block3">
+                    <ul class="player-stats">
+                        <li class="stats-item">
+                            <p class="stats">Команда</p>
+                            <p class="stats">Факел</p>
+                        </li>
+                        <li class="stats-item">
+                            <p class="stats">Родилась</p>
+                            <p class="stats">04.08.1980</p>
+                        </li>
+                        <li class="stats-item">
+                            <p class="stats">Рост</p>
+                            <p class="stats">174</p>
+                        </li>
+                        <li class="stats-item">
+                            <p class="stats">Амплуа</p>
+                            <p class="stats">Доигровщик</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="player-block4">
+                    <div class="block4-top">
+                        <p class="block4-small">Очков</p>
+                        <p class="block4-small">Подач</p>
+                        <p class="block4-small">Атак</p>
+                        <p class="block4-small">Блоков</p>
+                    </div>
+                    <div class="block4-bottom">
+                        <div class="rounded-value">
+                            <span class="yellow1">50</span>
+                            <img class="wheel1 wheel-img" src="img/wheels/yellow.png">
+                        </div>
+                        <div class="rounded-value">
+                            <span class="green1">21</span>
+                            <img class="wheel2 wheel-img" src="img/wheels/green.png">
+                        </div>
+                        <div class="rounded-value">
+                            <span class="red1">80</span>
+                            <img class="wheel3 wheel-img" src="img/wheels/red.png">
+                        </div>
+                        <div class="rounded-value">
+                            <span class="blue1">12</span>
+                            <img class="wheel4 wheel-img" src="img/wheels/blue.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="player-block5">
+                    <button type="button" class="player-showmore">Карьера игрока</button>
+                    <div class="player-table_mobile">
+                        <div class="table-row">
+                            <div class="table-cell">
+                                <div class="cell-top">
+                                    <img src="img/teams/1.svg" alt="" class="player-table_img">
+                                </div>
+                                <div class="cell-bottom">
+                                    <p class="team-name">Динамо</p>
+                                    <p class="team-years">2017-2018</p>
+                                </div>
+                            </div>
+                            <div class="table-cell">
+                                <div class="cell-top">
+                                    <p class="cell-letter">О</p>
+                                </div>
+                                <div class="cell-bottom yellow">
+                                    <p class="cell-number">48</p>
+                                </div>
+                            </div>
+                            <div class="table-cell">
+                                <div class="cell-top">
+                                    <p class="cell-letter">П</p>
+                                </div>
+                                <div class="cell-bottom green">
+                                    <p class="cell-number">219</p>
+                                </div>
+                            </div>
+                            <div class="table-cell">
+                                <div class="cell-top">
+                                    <p class="cell-letter">А</p>
+                                </div>
+                                <div class="cell-bottom red">
+                                    <p class="cell-number">180</p>
+                                </div>
+                            </div>
+                            <div class="table-cell">
+                                <div class="cell-top">
+                                    <p class="cell-letter">Б</p>
+                                </div>
+                                <div class="cell-bottom blue">
+                                    <p class="cell-number">76</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell">
+                                <div class="cell-top">
+                                    <img src="img/teams/1.svg" alt="" class="player-table_img">
+                                </div>
+                                <div class="cell-bottom">
+                                    <p class="team-name">Динамо</p>
+                                    <p class="team-years">2017-2018</p>
+                                </div>
+                            </div>
+                            <div class="table-cell">
+                                <div class="cell-top">
+                                    <p class="cell-letter">О</p>
+                                </div>
+                                <div class="cell-bottom yellow">
+                                    <p class="cell-number">48</p>
+                                </div>
+                            </div>
+                            <div class="table-cell">
+                                <div class="cell-top">
+                                    <p class="cell-letter">П</p>
+                                </div>
+                                <div class="cell-bottom green">
+                                    <p class="cell-number">219</p>
+                                </div>
+                            </div>
+                            <div class="table-cell">
+                                <div class="cell-top">
+                                    <p class="cell-letter">А</p>
+                                </div>
+                                <div class="cell-bottom red">
+                                    <p class="cell-number">180</p>
+                                </div>
+                            </div>
+                            <div class="table-cell">
+                                <div class="cell-top">
+                                    <p class="cell-letter">Б</p>
+                                </div>
+                                <div class="cell-bottom blue">
+                                    <p class="cell-number">76</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell">
+                                <div class="cell-top">
+                                    <img src="img/teams/1.svg" alt="" class="player-table_img">
+                                </div>
+                                <div class="cell-bottom">
+                                    <p class="team-name">Динамо</p>
+                                    <p class="team-years">2017-2018</p>
+                                </div>
+                            </div>
+                            <div class="table-cell">
+                                <div class="cell-top">
+                                    <p class="cell-letter">О</p>
+                                </div>
+                                <div class="cell-bottom yellow">
+                                    <p class="cell-number">48</p>
+                                </div>
+                            </div>
+                            <div class="table-cell">
+                                <div class="cell-top">
+                                    <p class="cell-letter">П</p>
+                                </div>
+                                <div class="cell-bottom green">
+                                    <p class="cell-number">219</p>
+                                </div>
+                            </div>
+                            <div class="table-cell">
+                                <div class="cell-top">
+                                    <p class="cell-letter">А</p>
+                                </div>
+                                <div class="cell-bottom red">
+                                    <p class="cell-number">180</p>
+                                </div>
+                            </div>
+                            <div class="table-cell">
+                                <div class="cell-top">
+                                    <p class="cell-letter">Б</p>
+                                </div>
+                                <div class="cell-bottom blue">
+                                    <p class="cell-number">76</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="table-row">
+                            <div class="table-cell">
+                                <div class="cell-top">
+                                    <img src="img/teams/1.svg" alt="" class="player-table_img">
+                                </div>
+                                <div class="cell-bottom">
+                                    <p class="team-name">Динамо</p>
+                                    <p class="team-years">2017-2018</p>
+                                </div>
+                            </div>
+                            <div class="table-cell">
+                                <div class="cell-top">
+                                    <p class="cell-letter">О</p>
+                                </div>
+                                <div class="cell-bottom yellow">
+                                    <p class="cell-number">48</p>
+                                </div>
+                            </div>
+                            <div class="table-cell">
+                                <div class="cell-top">
+                                    <p class="cell-letter">П</p>
+                                </div>
+                                <div class="cell-bottom green">
+                                    <p class="cell-number">219</p>
+                                </div>
+                            </div>
+                            <div class="table-cell">
+                                <div class="cell-top">
+                                    <p class="cell-letter">А</p>
+                                </div>
+                                <div class="cell-bottom red">
+                                    <p class="cell-number">180</p>
+                                </div>
+                            </div>
+                            <div class="table-cell">
+                                <div class="cell-top">
+                                    <p class="cell-letter">Б</p>
+                                </div>
+                                <div class="cell-bottom blue">
+                                    <p class="cell-number">76</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="mobile-footer">
+                <ul class="footer-list">
+                    <li class="footer-list_item">
+                        <a href="/">Женский чемпионат</a>
+                    </li>
+                    <li class="footer-list_item">
+                        <a href="/">Мужской чемпионат</a>
+                    </li>
+                    <li class="footer-list_item">
+                        <a href="bid.html">Заявка на участие</a>
+                        <a href="javascript: void(0)" class="mdi mdi-vk"></a>
+                    </li>
+                    <li class="footer-list_item">
+                        <a href="contacts.html">Контакты</a>
+                        <a href="javascript: void(0)" class="mdi mdi-instagram"></a>
+                    </li>
+                    <li class="footer-list_item">
+                        <a href="javascript: void(0)">Магазин</a>
+                        <a href="javascript: void(0)" class="mdi mdi-facebook"></a>
+                    </li>
+                </ul>
+                <a href="tel:89117359822" class="footer-item ">+7&nbsp;911&nbsp;735&nbsp;98&nbsp;22</a>
+                <a href="mailto:volleyleague@pvl.spb.ru" class="footer-item ">volleyleague@pvl.spb.ru</a>
+                <a href="#" class="footer-item_small center">Политика кофиденциальности</a>
+                <p class="footer-item_small1 center">
+                    <script>
+                        document.write("&copy; "+ new Date().getFullYear());
+                    </script> ПЕТЕРБРУГСКАЯ ВОЛЕЙБОЛЬНАЯ ЛИГА
+                </p>
+                <div class="developer-cont">
+                    <a href="http://kdm1.ru" target="_blank">
+                        <img src="img/developer/kdm.svg" alt="" class="kdm-img">
+                        <div class="developer-right">
+                            <p class="developer-desc">Сайт разработан в агентстве</p>
+                            <p class="developer-desc">&laquo;Клиника доброго маркетолога&raquo;</p>
+                        </div>
+                    </a>
+                </div>
+            </footer>
+            <footer class="desctop-footer">
+            
+            </footer>
+        </main>
+        <div class="overlay-blue"></div>
+    <script src="js/script.js"></script>
+    </body>
+</html>

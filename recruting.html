@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Результаты игр - Санкт-Петербург</title>
+        <link href="css/jquery-ui.min.css" rel="stylesheet">
+        <link href="css/jquery-ui.theme.min.css" rel="stylesheet">
+        <link href="css/jquery.mCustomScrollbar.min.css" rel="stylesheet">
+        <link href="css/materialdesignicons.min.css" rel="stylesheet">
+        <link href="css/slick.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="js/jQuery-3.3.1.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/jquery.ui.touch-punch.min.js"></script>
+        <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="js/slick.js"></script>
+    </head>
+    <body>
+    <header class="header container">
+        <div class="desctop-header mobile-hidden">
+            <div class="header-left">
+                <a href="/">
+                    <img src="img/logo/logo.svg" alt="" class="header-logo">
+                </a>
+            </div>
+            <div class="header-right">
+                <div class="right-top">
+                    <p class="season">Сезон 2017-2018</p>
+                    <ul class="header-nav">
+                        <li class="nav-item">
+                            <a href="/">
+                                <div class="number number-triangle">1</div>
+                                <p class="nav-item_name">
+                                    Женский<br> чемпионат
+                                </p>
+                                <ul class="inner-list">
+                                    <li class="inner-item">
+                                        <a href="state.html" class="inner-a">Положение</a>
+                                    </li>
+                                    <li class="inner-item">
+                                        <a href="teams.html" class="inner-a">Команды</a>
+                                    </li>
+                                    <li class="inner-item">
+                                        <a href="players.html" class="inner-a">Игроки</a>
+                                    </li>
+                                    <li class="inner-item">
+                                        <a href="stats.html" class="inner-a">Статистика</a>
+                                    </li>
+                                    <li class="inner-item">
+                                        <a href="game-results.html" class="inner-a">Результаты игр</a>
+                                    </li>
+                                    <li class="inner-item">
+                                        <a href="timetable.html" class="inner-a">Расписание игр</a>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/">
+                                <div class="number number-triangle">2</div>
+                                <p class="nav-item_name">
+                                    Мужской<br>чемпионат
+                                </p>
+                                <ul class="inner-list">
+                                    <li class="inner-item">
+                                        <a href="state.html" class="inner-a">Положение</a>
+                                    </li>
+                                    <li class="inner-item">
+                                        <a href="teams.html" class="inner-a">Команды</a>
+                                    </li>
+                                    <li class="inner-item">
+                                        <a href="players.html" class="inner-a">Игроки</a>
+                                    </li>
+                                    <li class="inner-item">
+                                        <a href="stats.html" class="inner-a">Статистика</a>
+                                    </li>
+                                    <li class="inner-item">
+                                        <a href="game-results.html" class="inner-a">Результаты игр</a>
+                                    </li>
+                                    <li class="inner-item">
+                                        <a href="timetable.html" class="inner-a">Расписание игр</a>
+                                    </li>
+                                </ul>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="bid.html">
+                                <div class="number">3</div>
+                                <p class="nav-item_name">
+                                    Заявка<br>на участие
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="javascript: void(0)">
+                                <div class="number">4</div>
+                                <p class="nav-item_name">
+                                    Магазин
+                                </p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="contacts.html">
+                                <div class="number">5</div>
+                                <p class="nav-item_name">
+                                    Контакты
+                                </p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="right-bottom">
+                    <div class="header-contacts">
+                        <a href="mailto: volleyleague@pvl.spb.ru">volleyleague@pvl.spb.ru</a>
+                        <a href="tel:+79117359822">+7&nbsp;911&nbsp;735&nbsp;98&nbsp;22</a>
+                    </div>
+                    <div class="bottom-nav">
+                        <p>Женский чемпионат</p>
+                        <p>Заявка на участие команды</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mobile-header desctop-hidden">
+            <ul class="mobile-header_list">
+                <li class="mobile-header_item">
+                    <a href="tel:89117359822" class="mobile-header_tel mdi mdi-phone"></a>
+                </li>
+                <li class="mobile-header_item">
+                    <a href="/" class="mobile-header_logo"><img src="img/logo/logo.svg" alt=""></a>
+                </li>
+                <li class="mobile-header_item">
+                    <div class="burger-menu">
+                        <span class="line1"></span>
+                        <span class="line2"></span>
+                        <span class="line3"></span>
+                    </div>
+                    <a href="mailto:volleyleague@pvl.spb.ru" class="mobile-header_mail mdi mdi-email"></a>
+                </li>
+            </ul>
+            <ul class="mobile-menu_list">
+                <li class="mobile-menu_item underline"><a><p>Женский чемпионат</p></a>
+                    <ul class="mobile-menu_innerList">
+                        <li class="inner-menu-item"><a href="state.html">Положение</a></li>
+                        <li class="inner-menu-item"><a href="teams.html">Команды</a></li>
+                        <li class="inner-menu-item"><a href="players.html">Игроки</a></li>
+                        <li class="inner-menu-item"><a href="stats.html">Статистика</a></li>
+                        <li class="inner-menu-item"><a href="game-results.html">Результаты игр</a></li>
+                        <li class="inner-menu-item"><a href="timetable.html">Расписание игр</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-menu_item underline"><a ><p>Мужской чемпионат</p></a>
+                    <ul class="mobile-menu_innerList">
+                        <li class="inner-menu-item"><a href="state.html">Положение</a></li>
+                        <li class="inner-menu-item"><a href="teams.html">Команды</a></li>
+                        <li class="inner-menu-item"><a href="players.html">Игроки</a></li>
+                        <li class="inner-menu-item"><a href="stats.html">Статистика</a></li>
+                        <li class="inner-menu-item"><a href="game-results.html">Результаты игр</a></li>
+                        <li class="inner-menu-item"><a href="timetable.html">Расписание игр</a></li>
+                    </ul>
+                </li>
+                <li class="mobile-menu_item"><a href="bid.html">Заявка на участие</a></li>
+                <li class="mobile-menu_item"><a href="javascript: void(0)">Магазин</a></li>
+                <li class="mobile-menu_item"><a href="contacts.html">Контакты</a></li>
+                <li class="close-menu_button"></li>
+            </ul>
+        </div>
+    </header>
+        <main class="main-page">
+            <section class="recruting ">
+                <h1 class="page-title container desctop-hidden">Игроки</h1>
+                <h2 class="page-title container mobile-hidden">Набор в команду</h2>
+                <form class="recruting-form_search container desctop-hidden">
+                    <input type="text" placeholder="Поиск" name="rec-search">
+                    <button type="submit" class="mdi mdi-magnify"></button>
+                </form>
+                <form class="recruting-form_select container">
+                    <div class="top">
+                        <div class="wrap1">
+                            <label for="rec-champ" class="label">Выберите чемпионат</label>
+                            <div class="select-cont">
+                                <select id="rec-champ" name="rec-champ">
+                                    <option value="rec-woman">Женский</option>
+                                    <option value="rec-man">Мужской</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="wrap2">
+                            <label for="rec-amplua" class="label">Амплуа</label>
+                            <div class="select-cont">
+                                <select id="rec-amplua" name="rec-amplua">
+                                    <option value="diag">Диагональный</option>
+                                    <option value="doigr">Доигровщик</option>
+                                    <option value="libero">Либеро</option>
+                                    <option value="svyaz">Связующий</option>
+                                    <option value="centrBlock">Центральный блокирующий</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="wrap3">
+                            <value for="rec-uroven" class="label">Уровень игры</value>
+                            <div class="select-cont">
+                                <select id="rec-uroven" name="rec-uroven">
+                                    <option value="lubitel">Любитель</option>
+                                    <option value="msmk">МСМК</option>
+                                    <option value="ms">Мастер спорта России</option>
+                                    <option value="kms">Кандидат в мастера спорта</option>
+                                    <option value="1-raz">1-ый спортивный разряд</option>
+                                    <option value="2-raz">2-ой спортивный разряд</option>
+                                    <option value="3-raz">3-ий спортивный разряд</option>
+                                    <option value="1-det">1-ый юношеский разряд</option>
+                                    <option value="2-det">2-ой юношеский разряд</option>
+                                    <option value="3-det">3-ий юношеский разряд</option>
+                                </select>
+                            </div>
+                        </div>
+                        <button type="button" class="accept mobile-hidden">Подтвердить</button>
+                    </div>
+                    <button type="button" class="add-player">Добавить игрока</button>
+                    <button type="submit" class="accept desctop-hidden">Подтвердить</button>
+                </form>
+                <div class="searched-players container">
+                    <div class="player-cont">
+                        <a href="player.html">
+                            <div class="player-left">
+                                <img src="img/players/1.jpg" alt="">
+                            </div>
+                            <div class="player-right">
+                                <p class="name">Иван Иванов</p>
+                                <p class="league">Суперлига</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="player-cont">
+                        <a href="player.html">
+                            <div class="player-left">
+                                <img src="img/players/1.jpg" alt="">
+                            </div>
+                            <div class="player-right">
+                                <p class="name">Иван Иванов</p>
+                                <p class="league">Суперлига</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="player-cont">
+                        <a href="player.html">
+                            <div class="player-left">
+                                <img src="img/players/1.jpg" alt="">
+                            </div>
+                            <div class="player-right">
+                                <p class="name">Иван Иванов</p>
+                                <p class="league">Суперлига</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="player-cont">
+                        <a href="player.html">
+                            <div class="player-left">
+                                <img src="img/players/1.jpg" alt="">
+                            </div>
+                            <div class="player-right">
+                                <p class="name">Иван Иванов</p>
+                                <p class="league">Суперлига</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="player-cont">
+                        <a href="player.html">
+                            <div class="player-left">
+                                <img src="img/players/1.jpg" alt="">
+                            </div>
+                            <div class="player-right">
+                                <p class="name">Иван Иванов</p>
+                                <p class="league">Суперлига</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="player-cont">
+                        <a href="player.html">
+                            <div class="player-left">
+                                <img src="img/players/1.jpg" alt="">
+                            </div>
+                            <div class="player-right">
+                                <p class="name">Иван Иванов</p>
+                                <p class="league">Суперлига</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <div class="mobile-footer desctop-hidden">
+                <ul class="footer-list">
+                    <li class="footer-list_item">
+                        <a href="#">Женский чемпионат</a>
+                    </li>
+                    <li class="footer-list_item">
+                        <a href="#">Мужской чемпионат</a>
+                    </li>
+                    <li class="footer-list_item">
+                        <a href="#">Заявка на участие</a>
+                        <a href="#" class="mdi mdi-vk"></a>
+                    </li>
+                    <li class="footer-list_item">
+                        <a href="#">Контакты</a>
+                        <a href="#" class="mdi mdi-instagram"></a>
+                    </li>
+                    <li class="footer-list_item">
+                        <a href="#">Магазин</a>
+                        <a href="#" class="mdi mdi-facebook"></a>
+                    </li>
+                </ul>
+                <a href="tel:89117359822" class="footer-item ">+7&nbsp;911&nbsp;735&nbsp;98&nbsp;22</a>
+                <a href="mailto:volleyleague@pvl.spb.ru" class="footer-item ">volleyleague@pvl.spb.ru</a>
+                <a href="#" class="footer-item_small center">Политика кофиденциальности</a>
+                <p class="footer-item_small1 center">
+                    <script>
+                        document.write("&copy; "+ new Date().getFullYear());
+                    </script> ПЕТЕРБРУГСКАЯ ВОЛЕЙБОЛЬНАЯ ЛИГА
+                </p>
+                <div class="developer-cont">
+                    <a href="http://kdm1.ru" target="_blank">
+                        <img src="img/developer/kdm.svg" alt="" class="kdm-img">
+                        <div class="developer-right">
+                            <p class="developer-desc">Сайт разработан в агентстве</p>
+                            <p class="developer-desc">&laquo;Клиника доброго маркетолога&raquo;</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="desctop-footer container mobile-hidden">
+                <div class="footer-top">
+                    <ul class="footer-nav">
+                        <li class="footer-nav_item">
+                            <a href="/">Женский чемпионат</a>
+                        </li>
+                        <li class="footer-nav_item">
+                            <a href="index-men.html">Мужской чемпионат</a>
+                        </li>
+                        <li class="footer-nav_item">
+                            <a href="add-application.html">Заявка на участие</a>
+                        </li>
+                        <li class="footer-nav_item">
+                            <a href="javascript: void(0)">Магазин</a>
+                        </li>
+                        <li class="footer-nav_item">
+                            <a href="contacts.html">Контакты</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-bottom">
+                    <div class="footer-1">
+                        <a href="tel:+79117359822">+7&nbsp;911&nbsp;735&nbsp;98&nbsp;22</a>
+                        <a href="mailto: volleyleague@pvl.spb.ru">volleyleague@pvl.spn.ru</a>
+                    </div>
+                    <div class="footer-2">
+                        <div class="footer-21">
+                            <ul class="social-list">
+                                <li class="social-item">
+                                    <a href="javascript: void(0)" target="_blank" class="mdi mdi-vk"></a>
+                                </li>
+                                <li class="social-item">
+                                    <a href="javascript: void(0)" target="_blank" class="mdi mdi-instagram"></a>
+                                </li>
+                                <li class="social-item">
+                                    <a href="javascript: void(0)" target="_blank" class="mdi mdi-facebook"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="footer-22">
+                            <p class="copyright"><script>
+                                document.write("&copy; "+ new Date().getFullYear());
+                            </script> ПЕТЕРБРУГСКАЯ ВОЛЕЙБОЛЬНАЯ ЛИГА</p>
+                        </div>
+                        <div class="footer-23">
+                            <a class="politic">Политика конфиденциальности</a>
+                        </div>
+                    </div>
+                    <div class="footer-3">
+                        <a href="http://kdm1.ru" target="_blank">
+                            <img src="img/developer/kdm.svg" alt="">
+                            <div class="dev-cont">
+                                <p>Сайт разработан в агентстве</p>
+                                <p>&laquo;Клиника доброго маркетолога&raquo;</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="overlay-blue"></div>
+    <script src="js/script.js"></script>
+    </body>
+</html>
