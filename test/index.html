@@ -1,0 +1,175 @@
+<html>
+    <head>
+        <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <style>
+            body{
+                background: #000;
+            }
+            .wheel1 {
+                z-index: 100;
+
+                -webkit-animation-name: spin;
+                -webkit-animation-duration: 3000ms;
+                -webkit-animation-iteration-count: infinite;
+                -webkit-animation-timing-function: linear;
+                -moz-animation-name: spin;
+                -moz-animation-duration: 3000ms;
+                -moz-animation-iteration-count: infinite;
+                -moz-animation-timing-function: linear;
+                -ms-animation-name: spin;
+                -ms-animation-duration: 3000ms;
+                -ms-animation-iteration-count: infinite;
+                -ms-animation-timing-function: linear;
+
+                animation-name: spin;
+                animation-duration: 3000ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+            .wheel2 {
+                z-index: 100;
+
+                -webkit-animation-name: spin;
+                -webkit-animation-duration: 3000ms;
+                -webkit-animation-iteration-count: infinite;
+                -webkit-animation-timing-function: linear;
+                -moz-animation-name: spin;
+                -moz-animation-duration: 3000ms;
+                -moz-animation-iteration-count: infinite;
+                -moz-animation-timing-function: linear;
+                -ms-animation-name: spin;
+                -ms-animation-duration: 3000ms;
+                -ms-animation-iteration-count: infinite;
+                -ms-animation-timing-function: linear;
+
+                animation-name: spin;
+                animation-duration: 3000ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+            .wheel3 {
+                z-index: 100;
+
+                -webkit-animation-name: spin;
+                -webkit-animation-duration: 3000ms;
+                -webkit-animation-iteration-count: infinite;
+                -webkit-animation-timing-function: linear;
+                -moz-animation-name: spin;
+                -moz-animation-duration: 3000ms;
+                -moz-animation-iteration-count: infinite;
+                -moz-animation-timing-function: linear;
+                -ms-animation-name: spin;
+                -ms-animation-duration: 3000ms;
+                -ms-animation-iteration-count: infinite;
+                -ms-animation-timing-function: linear;
+
+                animation-name: spin;
+                animation-duration: 3000ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+            .wheel4 {
+                z-index: 100;
+
+                -webkit-animation-name: spin;
+                -webkit-animation-duration: 3000ms;
+                -webkit-animation-iteration-count: infinite;
+                -webkit-animation-timing-function: linear;
+                -moz-animation-name: spin;
+                -moz-animation-duration: 3000ms;
+                -moz-animation-iteration-count: infinite;
+                -moz-animation-timing-function: linear;
+                -ms-animation-name: spin;
+                -ms-animation-duration: 3000ms;
+                -ms-animation-iteration-count: infinite;
+                -ms-animation-timing-function: linear;
+
+                animation-name: spin;
+                animation-duration: 3000ms;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+            @-ms-keyframes spin {
+                from { -ms-transform: rotate(0deg); }
+                to { -ms-transform: rotate(360deg); }
+            }
+            @-moz-keyframes spin {
+                from { -moz-transform: rotate(0deg); }
+                to { -moz-transform: rotate(360deg); }
+            }
+            @-webkit-keyframes spin {
+                from { -webkit-transform: rotate(0deg); }
+                to { -webkit-transform: rotate(360deg); }
+            }
+            @keyframes spin {
+                from {
+                    transform:rotate(0deg);
+                }
+                to {
+                    transform:rotate(360deg);
+                }
+            }
+            .value{
+                color: #fff;
+                position: absolute;
+                margin-top: 27px;
+                margin-left: 30px;
+                font-size: 18px;
+            }
+            .rounded-value{
+                display: inline;
+            }
+        </style>    
+        <script>
+            $( document ).ready(function() {
+               var duration1 = 1/Number($('.value#1').text())*200000;
+               var duration2 = 1/Number($('.value#2').text())*200000;
+               var duration3 = 1/Number($('.value#3').text())*200000;
+               var duration4 = 1/Number($('.value#4').text())*200000;
+                
+                console.log(duration1);
+                console.log(duration2);
+                console.log(duration3);
+                console.log(duration4);
+                
+                $('.wheel1').css('-webkit-animation-duration', duration1 + 'ms');
+                $('.wheel1').css('-moz-animation-duration', duration1 + 'ms');
+                $('.wheel1').css('-ms-animation-duration', duration1 + 'ms');
+                $('.wheel1').css('animation-duration', duration1 + 'ms');
+                
+                $('.wheel2').css('-webkit-animation-duration', duration2 + 'ms');
+                $('.wheel2').css('-moz-animation-duration', duration2 + 'ms');
+                $('.wheel2').css('-ms-animation-duration', duration2 + 'ms');
+                $('.wheel2').css('animation-duration', duration2 + 'ms');
+                
+                $('.wheel3').css('-webkit-animation-duration', duration3 + 'ms');
+                $('.wheel3').css('-moz-animation-duration', duration3 + 'ms');
+                $('.wheel3').css('-ms-animation-duration', duration3 + 'ms');
+                $('.wheel3').css('animation-duration', duration3 + 'ms');
+                
+                $('.wheel4').css('-webkit-animation-duration', duration4 + 'ms');
+                $('.wheel4').css('-moz-animation-duration', duration4 + 'ms');
+                $('.wheel4').css('-ms-animation-duration', duration4 + 'ms');
+                $('.wheel4').css('animation-duration', duration4 + 'ms');
+            });
+        </script>
+    </head>
+    <body>
+        <div class="rounded-value">
+            <span id="1" class="value">30</span>
+            <img class="wheel1" src="Group%20965.png">
+        </div>
+        <div class="rounded-value">
+            <span id="2" class="value">50</span>
+            <img class="wheel2" src="Group%20966.png">
+        </div>
+        <div class="rounded-value">
+            <span id="3" class="value">70</span>
+            <img class="wheel3" src="Group%20967.png">
+        </div>
+        <div class="rounded-value">
+            <span id="4" class="value">90</span>
+            <img class="wheel4" src="Group%20968.png">
+        </div>
+    </body>
+</html>
